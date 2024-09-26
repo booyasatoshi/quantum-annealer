@@ -1,0 +1,9 @@
+{
+    "n_iterations": 100,
+    "step_size": 0.1,
+    "temp": 10,
+    "num_epochs": 50,
+    "input_dim_bounds": [50, 500],
+    "hidden_dim_bounds": [50, 500],
+    "learning_rate_bounds": [0.0001, 0.1]
+}

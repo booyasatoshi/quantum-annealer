@@ -1,0 +1,106 @@
+Starting data preprocessing...
+Vocabulary created:
+{'hello': 1, 'how': 2, 'are': 3, 'you?': 4, 'what': 5, 'is': 6, 'your': 7, 'name?': 8, 'tell': 9, 'me': 10, 'a': 11, 'joke': 12, 'goodbye': 13, 'hi': 14, 'there!': 15, "i'm": 16, 'doing': 17, 'well,': 18, 'thank': 19, 'you!': 20, 'i': 21, 'am': 22, 'chatbot.': 23, 'why': 24, "don't": 25, 'scientists': 26, 'trust': 27, 'atoms?': 28, 'because': 29, 'they': 30, 'make': 31, 'up': 32, 'everything!': 33, 'goodbye!': 34, 'have': 35, 'nice': 36, 'day!': 37, '<pad>': 0, '<sos>': 39, '<eos>': 41}
+Encoded inputs:
+[[39, 1, 41], [39, 2, 3, 4, 41], [39, 5, 6, 7, 8, 41], [39, 9, 10, 11, 12, 41], [39, 13, 41]]
+Encoded outputs:
+[[39, 14, 15, 41], [39, 16, 17, 18, 19, 20, 41], [39, 21, 22, 11, 23, 41], [39, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 41], [39, 34, 35, 11, 36, 37, 41]]
+Accepted worse solution: {'input_dim': 123.84107142686844, 'hidden_dim': 204.76932982206344, 'output_dim': 1.9027632236480714, 'vocab_size': 1397.2850701820105, 'learning_rate': 0.0001}, score: 7.2373857498168945
+Accepted worse solution: {'input_dim': 123.60516797304153, 'hidden_dim': 204.8122794598341, 'output_dim': 1.8480400860309603, 'vocab_size': 1397.3450279545038, 'learning_rate': 0.01}, score: 7.22463321685791
+Accepted worse solution: {'input_dim': 123.45811482667922, 'hidden_dim': 204.85511969029903, 'output_dim': 1.8576623469591143, 'vocab_size': 1397.5572528671473, 'learning_rate': 0.0001}, score: 7.266134262084961
+Accepted worse solution: {'input_dim': 123.5032184422016, 'hidden_dim': 204.83826755285264, 'output_dim': 1.9090940505266192, 'vocab_size': 1397.6374351155014, 'learning_rate': 0.0001}, score: 7.230490684509277
+Accepted worse solution: {'input_dim': 123.25805271267889, 'hidden_dim': 205.019845867157, 'output_dim': 1.900643274188042, 'vocab_size': 1397.7506918918343, 'learning_rate': 0.01}, score: 7.24566125869751
+Accepted worse solution: {'input_dim': 123.29239498674868, 'hidden_dim': 204.99853093326092, 'output_dim': 1.8222210317850116, 'vocab_size': 1397.678833658621, 'learning_rate': 0.01}, score: 7.259561538696289
+Accepted worse solution: {'input_dim': 123.2915540628135, 'hidden_dim': 205.04282216727734, 'output_dim': 1.802102063596249, 'vocab_size': 1397.7428080152722, 'learning_rate': 0.01}, score: 7.25317907333374
+Accepted worse solution: {'input_dim': 123.13725359961389, 'hidden_dim': 204.99959527254106, 'output_dim': 1.8414144620299344, 'vocab_size': 1397.6589970361442, 'learning_rate': 0.01}, score: 7.271200180053711
+Accepted worse solution: {'input_dim': 123.04001784250138, 'hidden_dim': 204.94466026425363, 'output_dim': 1.8736664548516277, 'vocab_size': 1397.616434345767, 'learning_rate': 0.0001}, score: 7.268537521362305
+Accepted worse solution: {'input_dim': 123.05488218739627, 'hidden_dim': 204.89769219458105, 'output_dim': 1.9351181820034984, 'vocab_size': 1397.5219224017114, 'learning_rate': 0.0001}, score: 7.269219875335693
+Accepted worse solution: {'input_dim': 122.99707561805843, 'hidden_dim': 204.86593100726606, 'output_dim': 1.8994793340563778, 'vocab_size': 1397.6621656101197, 'learning_rate': 0.01}, score: 7.249457359313965
+Accepted worse solution: {'input_dim': 123.0553681500256, 'hidden_dim': 204.7566101640463, 'output_dim': 1.7286428973078731, 'vocab_size': 1397.5690831344575, 'learning_rate': 0.01}, score: 7.255166530609131
+Accepted worse solution: {'input_dim': 123.02903202250599, 'hidden_dim': 204.67132929861546, 'output_dim': 1.7246794354170565, 'vocab_size': 1397.611520839855, 'learning_rate': 0.0001}, score: 7.226247310638428
+Accepted worse solution: {'input_dim': 122.93207610324023, 'hidden_dim': 204.63059079647064, 'output_dim': 1.9467980515211825, 'vocab_size': 1397.6093387113883, 'learning_rate': 0.01}, score: 7.241623878479004
+Accepted worse solution: {'input_dim': 122.87822651341556, 'hidden_dim': 204.63956655710936, 'output_dim': 1.9026787500828508, 'vocab_size': 1397.4700844036415, 'learning_rate': 0.0001}, score: 7.262532711029053
+Accepted worse solution: {'input_dim': 122.97069796994326, 'hidden_dim': 204.68567048162222, 'output_dim': 1.9481232743710284, 'vocab_size': 1397.5028146790341, 'learning_rate': 0.0001}, score: 7.241249084472656
+Accepted worse solution: {'input_dim': 122.97333965171126, 'hidden_dim': 204.61792560070754, 'output_dim': 1.8278544884175068, 'vocab_size': 1397.4013684200124, 'learning_rate': 0.0001}, score: 7.246613025665283
+New best solution: {'input_dim': 123.02146215010431, 'hidden_dim': 204.66934282630683, 'output_dim': 1.7532508533447986, 'vocab_size': 1397.4372089730577, 'learning_rate': 0.01}, score: 7.215339183807373
+Accepted worse solution: {'input_dim': 122.97870860528198, 'hidden_dim': 204.70781560391188, 'output_dim': 1.747947875782848, 'vocab_size': 1397.416182099469, 'learning_rate': 0.01}, score: 7.232071876525879
+Accepted worse solution: {'input_dim': 122.9439562661573, 'hidden_dim': 204.65946006029844, 'output_dim': 1.669973282143474, 'vocab_size': 1397.492524866946, 'learning_rate': 0.0001}, score: 7.252289772033691
+Accepted worse solution: {'input_dim': 123.02488857340064, 'hidden_dim': 204.73027826994658, 'output_dim': 1.634440959617496, 'vocab_size': 1397.396937196143, 'learning_rate': 0.01}, score: 7.223574638366699
+Accepted worse solution: {'input_dim': 122.95878653358665, 'hidden_dim': 204.7134450674057, 'output_dim': 1.585555506870151, 'vocab_size': 1397.252297680266, 'learning_rate': 0.01}, score: 7.2668070793151855
+Accepted worse solution: {'input_dim': 122.89917127322403, 'hidden_dim': 204.78415250182152, 'output_dim': 1.5067529212683444, 'vocab_size': 1397.2629749232901, 'learning_rate': 0.01}, score: 7.223869323730469
+Accepted worse solution: {'input_dim': 122.82028005551544, 'hidden_dim': 204.76412259191275, 'output_dim': 1.537288854643703, 'vocab_size': 1397.0904877001417, 'learning_rate': 0.01}, score: 7.245100021362305
+Accepted worse solution: {'input_dim': 122.77763709258285, 'hidden_dim': 204.75147629380226, 'output_dim': 1.7592163305729631, 'vocab_size': 1397.2387204701079, 'learning_rate': 0.01}, score: 7.235520362854004
+Accepted worse solution: {'input_dim': 122.75257573556152, 'hidden_dim': 204.7357255399227, 'output_dim': 1.730258477851749, 'vocab_size': 1397.133525520004, 'learning_rate': 0.01}, score: 7.263183116912842
+Accepted worse solution: {'input_dim': 122.91219246815888, 'hidden_dim': 204.98042375445365, 'output_dim': 1.7574362825602297, 'vocab_size': 1397.1610011273992, 'learning_rate': 0.01}, score: 7.2669172286987305
+Accepted worse solution: {'input_dim': 122.82001420091835, 'hidden_dim': 204.8945753455162, 'output_dim': 1.7859843324869875, 'vocab_size': 1397.136799735762, 'learning_rate': 0.01}, score: 7.249544143676758
+Accepted worse solution: {'input_dim': 123.10643673967567, 'hidden_dim': 205.0566297531128, 'output_dim': 1.8945741247385743, 'vocab_size': 1397.2360139319671, 'learning_rate': 0.0001}, score: 7.239713191986084
+Accepted worse solution: {'input_dim': 123.03482726048675, 'hidden_dim': 205.1932140827179, 'output_dim': 1.7901197742670778, 'vocab_size': 1397.169949311949, 'learning_rate': 0.01}, score: 7.25458288192749
+Accepted worse solution: {'input_dim': 123.08534844946114, 'hidden_dim': 205.21454516351224, 'output_dim': 1.7381609808653598, 'vocab_size': 1397.178906198777, 'learning_rate': 0.0001}, score: 7.227473735809326
+Accepted worse solution: {'input_dim': 123.09966771136966, 'hidden_dim': 205.26532354056837, 'output_dim': 1.7652774613350635, 'vocab_size': 1397.2261294597756, 'learning_rate': 0.01}, score: 7.273894786834717
+Accepted worse solution: {'input_dim': 123.04553995858875, 'hidden_dim': 205.2330469578505, 'output_dim': 1.812891779467464, 'vocab_size': 1397.2734494322908, 'learning_rate': 0.0001}, score: 7.255986213684082
+New best solution: {'input_dim': 122.98866403829304, 'hidden_dim': 205.31946814358238, 'output_dim': 1.7746265780180697, 'vocab_size': 1397.14244555179, 'learning_rate': 0.0001}, score: 7.19993257522583
+Accepted worse solution: {'input_dim': 122.96495294701305, 'hidden_dim': 205.30399688184264, 'output_dim': 1.8006812628358606, 'vocab_size': 1397.2568283120168, 'learning_rate': 0.01}, score: 7.255819320678711
+Accepted worse solution: {'input_dim': 123.0535865737125, 'hidden_dim': 205.22870422899726, 'output_dim': 1.8784047421067958, 'vocab_size': 1397.2746154719962, 'learning_rate': 0.01}, score: 7.214049816131592
+Accepted worse solution: {'input_dim': 123.00622259806838, 'hidden_dim': 205.27246599495413, 'output_dim': 1.934538465365768, 'vocab_size': 1397.3961082154883, 'learning_rate': 0.0001}, score: 7.219391822814941
+Accepted worse solution: {'input_dim': 122.97325456868853, 'hidden_dim': 205.31770311892035, 'output_dim': 1.9104197081178431, 'vocab_size': 1397.459193264879, 'learning_rate': 0.0001}, score: 7.24442720413208
+Accepted worse solution: {'input_dim': 122.89246899615969, 'hidden_dim': 205.20603381693365, 'output_dim': 1.8131178434938198, 'vocab_size': 1397.5186364347114, 'learning_rate': 0.0001}, score: 7.223291397094727
+Accepted worse solution: {'input_dim': 123.03529532682147, 'hidden_dim': 205.181699565053, 'output_dim': 1.814233189914376, 'vocab_size': 1397.6233160192146, 'learning_rate': 0.0001}, score: 7.2199859619140625
+Accepted worse solution: {'input_dim': 123.0910100413486, 'hidden_dim': 205.01591419279578, 'output_dim': 1.7490871251560751, 'vocab_size': 1397.7844389015809, 'learning_rate': 0.0001}, score: 7.21835994720459
+Accepted worse solution: {'input_dim': 122.98264117967334, 'hidden_dim': 205.01292808447036, 'output_dim': 1.6636717856861654, 'vocab_size': 1397.9190232330934, 'learning_rate': 0.0001}, score: 7.2205810546875
+Accepted worse solution: {'input_dim': 122.8986836744472, 'hidden_dim': 204.93343153391035, 'output_dim': 1.6188832760788503, 'vocab_size': 1398.04840642754, 'learning_rate': 0.0001}, score: 7.2798309326171875
+Accepted worse solution: {'input_dim': 122.97021011840548, 'hidden_dim': 204.92014207635077, 'output_dim': 1.580842268560082, 'vocab_size': 1398.213598006405, 'learning_rate': 0.0001}, score: 7.2592926025390625
+Accepted worse solution: {'input_dim': 122.99064759891476, 'hidden_dim': 204.74288844857367, 'output_dim': 1.4805587650276724, 'vocab_size': 1398.2114886440336, 'learning_rate': 0.0001}, score: 7.247078895568848
+Accepted worse solution: {'input_dim': 122.91160953324284, 'hidden_dim': 204.81112857852133, 'output_dim': 1.5222915203310552, 'vocab_size': 1398.2711897231638, 'learning_rate': 0.01}, score: 7.251003742218018
+Accepted worse solution: {'input_dim': 122.80527209322895, 'hidden_dim': 204.92519980464132, 'output_dim': 1.628324452135712, 'vocab_size': 1398.287678862363, 'learning_rate': 0.0001}, score: 7.212185859680176
+Accepted worse solution: {'input_dim': 122.75737942736592, 'hidden_dim': 204.98446854744108, 'output_dim': 1.6688201875425877, 'vocab_size': 1398.3261360295116, 'learning_rate': 0.01}, score: 7.2710490226745605
+Accepted worse solution: {'input_dim': 122.7055829910561, 'hidden_dim': 204.98677893579008, 'output_dim': 1.6425744534470141, 'vocab_size': 1398.2886324562132, 'learning_rate': 0.01}, score: 7.263883590698242
+Accepted worse solution: {'input_dim': 122.49854136984791, 'hidden_dim': 205.0281212449074, 'output_dim': 1.6058354110457003, 'vocab_size': 1398.283219809085, 'learning_rate': 0.0001}, score: 7.257957458496094
+Accepted worse solution: {'input_dim': 122.65543204825367, 'hidden_dim': 205.15028401613236, 'output_dim': 1.6325270653702317, 'vocab_size': 1398.3101301945744, 'learning_rate': 0.0001}, score: 7.2394256591796875
+Accepted worse solution: {'input_dim': 122.65809729788448, 'hidden_dim': 204.99880276918412, 'output_dim': 1.7046105564571916, 'vocab_size': 1398.3166824840007, 'learning_rate': 0.0001}, score: 7.278679370880127
+Accepted worse solution: {'input_dim': 122.70254860017444, 'hidden_dim': 204.91756888628007, 'output_dim': 1.8305263460613785, 'vocab_size': 1398.2585653506217, 'learning_rate': 0.01}, score: 7.242411136627197
+Accepted worse solution: {'input_dim': 122.6441084871068, 'hidden_dim': 204.94927747547626, 'output_dim': 1.91440272340551, 'vocab_size': 1398.258888158947, 'learning_rate': 0.01}, score: 7.233316898345947
+Accepted worse solution: {'input_dim': 122.45894249770785, 'hidden_dim': 204.8416949301958, 'output_dim': 1.981487709376961, 'vocab_size': 1398.247794511914, 'learning_rate': 0.0001}, score: 7.25205135345459
+Accepted worse solution: {'input_dim': 122.3660754749551, 'hidden_dim': 204.7970442146063, 'output_dim': 1.8777915538288652, 'vocab_size': 1398.2783705562351, 'learning_rate': 0.0001}, score: 7.247373580932617
+Accepted worse solution: {'input_dim': 122.31365810725833, 'hidden_dim': 204.78021267801526, 'output_dim': 1.939159393403679, 'vocab_size': 1398.477162966132, 'learning_rate': 0.0001}, score: 7.278478622436523
+Accepted worse solution: {'input_dim': 122.42257428262378, 'hidden_dim': 204.69800360351803, 'output_dim': 1.9112136007286606, 'vocab_size': 1398.4964443176984, 'learning_rate': 0.0001}, score: 7.25502347946167
+Accepted worse solution: {'input_dim': 122.5426774749532, 'hidden_dim': 204.61695208698512, 'output_dim': 2.0538939715363083, 'vocab_size': 1398.6181449145079, 'learning_rate': 0.0036040196031332018}, score: 7.270663738250732
+Accepted worse solution: {'input_dim': 122.59066431317474, 'hidden_dim': 204.6732393756509, 'output_dim': 2.015257853362709, 'vocab_size': 1398.7113272815943, 'learning_rate': 0.01}, score: 7.248578071594238
+Accepted worse solution: {'input_dim': 122.62177598271515, 'hidden_dim': 204.64290139228106, 'output_dim': 1.9477572084404526, 'vocab_size': 1398.842902866006, 'learning_rate': 0.0001}, score: 7.278651714324951
+Accepted worse solution: {'input_dim': 122.62017619702961, 'hidden_dim': 204.46200800687075, 'output_dim': 1.8418588758446275, 'vocab_size': 1398.8509729526938, 'learning_rate': 0.01}, score: 7.225185871124268
+Accepted worse solution: {'input_dim': 122.51530152652408, 'hidden_dim': 204.45919618085026, 'output_dim': 1.7907892466522752, 'vocab_size': 1398.9056989215317, 'learning_rate': 0.01}, score: 7.235008239746094
+Accepted worse solution: {'input_dim': 122.51746624223884, 'hidden_dim': 204.43017100170255, 'output_dim': 1.8972913266159592, 'vocab_size': 1398.947621061653, 'learning_rate': 0.01}, score: 7.224423408508301
+Accepted worse solution: {'input_dim': 122.6768587660044, 'hidden_dim': 204.4443063043058, 'output_dim': 1.9782082200981674, 'vocab_size': 1398.9725999973716, 'learning_rate': 0.01}, score: 7.233990669250488
+Accepted worse solution: {'input_dim': 122.66066362075503, 'hidden_dim': 204.38485655412077, 'output_dim': 1.9124159098602829, 'vocab_size': 1399.1190472982826, 'learning_rate': 0.0001}, score: 7.242170333862305
+Accepted worse solution: {'input_dim': 122.6428657483309, 'hidden_dim': 204.31213950142265, 'output_dim': 1.9796218038536606, 'vocab_size': 1399.071513747424, 'learning_rate': 0.0001}, score: 7.260563850402832
+Accepted worse solution: {'input_dim': 122.69562114588912, 'hidden_dim': 204.3202833801508, 'output_dim': 2.111704456899315, 'vocab_size': 1399.0325239889326, 'learning_rate': 0.01}, score: 7.20314359664917
+Accepted worse solution: {'input_dim': 122.89832145087416, 'hidden_dim': 204.30535050332549, 'output_dim': 2.0400526464916764, 'vocab_size': 1398.8540245287122, 'learning_rate': 0.0001}, score: 7.238032817840576
+Accepted worse solution: {'input_dim': 122.87178989164526, 'hidden_dim': 204.24933256804945, 'output_dim': 2.0539377377368506, 'vocab_size': 1398.9528304152193, 'learning_rate': 0.0001}, score: 7.220318794250488
+Accepted worse solution: {'input_dim': 122.88689672611649, 'hidden_dim': 204.32084642946722, 'output_dim': 2.1110291824676093, 'vocab_size': 1398.9577790696176, 'learning_rate': 0.0001}, score: 7.23494815826416
+Accepted worse solution: {'input_dim': 122.8412905093282, 'hidden_dim': 204.6062615543604, 'output_dim': 2.168771533761173, 'vocab_size': 1398.9204566795381, 'learning_rate': 0.01}, score: 7.2900824546813965
+Accepted worse solution: {'input_dim': 122.65997704230244, 'hidden_dim': 204.3593449264765, 'output_dim': 2.2586687491275366, 'vocab_size': 1399.0165845353158, 'learning_rate': 0.01}, score: 7.222935199737549
+Accepted worse solution: {'input_dim': 122.7121395822614, 'hidden_dim': 204.36395003944637, 'output_dim': 2.0586253092624243, 'vocab_size': 1398.9997650105508, 'learning_rate': 0.0001}, score: 7.280617713928223
+Accepted worse solution: {'input_dim': 122.81479426585133, 'hidden_dim': 204.20657719522717, 'output_dim': 2.2143538282252844, 'vocab_size': 1398.894029267505, 'learning_rate': 0.01}, score: 7.256126880645752
+Accepted worse solution: {'input_dim': 122.73848509155209, 'hidden_dim': 204.0245613947511, 'output_dim': 2.378837113175541, 'vocab_size': 1398.627063425258, 'learning_rate': 0.01}, score: 7.2853102684021
+Accepted worse solution: {'input_dim': 122.69006404541429, 'hidden_dim': 204.12398646622898, 'output_dim': 2.2645378277637063, 'vocab_size': 1398.7110127825292, 'learning_rate': 0.0001}, score: 7.257386684417725
+Accepted worse solution: {'input_dim': 122.79605390690263, 'hidden_dim': 204.10548384785653, 'output_dim': 2.313822113070637, 'vocab_size': 1398.6952926043423, 'learning_rate': 0.01}, score: 7.259253978729248
+Accepted worse solution: {'input_dim': 122.79760536840182, 'hidden_dim': 204.1382554382086, 'output_dim': 2.2044914827682076, 'vocab_size': 1398.6160161916168, 'learning_rate': 0.0001}, score: 7.239531993865967
+Accepted worse solution: {'input_dim': 122.76161712100726, 'hidden_dim': 204.15298222601416, 'output_dim': 2.30708277085796, 'vocab_size': 1398.5211651269349, 'learning_rate': 0.01}, score: 7.240501403808594
+Accepted worse solution: {'input_dim': 122.8528093426488, 'hidden_dim': 204.0472176104784, 'output_dim': 2.382805959973484, 'vocab_size': 1398.5054552052172, 'learning_rate': 0.01}, score: 7.247206211090088
+Accepted worse solution: {'input_dim': 122.90484046628696, 'hidden_dim': 204.0300804078579, 'output_dim': 2.409115882311016, 'vocab_size': 1398.4519558880481, 'learning_rate': 0.01}, score: 7.231940746307373
+Accepted worse solution: {'input_dim': 122.9233367248438, 'hidden_dim': 204.09123414754868, 'output_dim': 2.399895516131073, 'vocab_size': 1398.59675279595, 'learning_rate': 0.0001}, score: 7.229315280914307
+Accepted worse solution: {'input_dim': 122.88122701486569, 'hidden_dim': 204.21512035131454, 'output_dim': 2.4496002943255, 'vocab_size': 1398.5206139359627, 'learning_rate': 0.0001}, score: 7.2172112464904785
+Accepted worse solution: {'input_dim': 122.72089679082852, 'hidden_dim': 204.08575481176376, 'output_dim': 2.468000847194343, 'vocab_size': 1398.6450946722184, 'learning_rate': 0.0001}, score: 7.230805397033691
+Accepted worse solution: {'input_dim': 122.92850677808742, 'hidden_dim': 204.16494048833846, 'output_dim': 2.5559531331993632, 'vocab_size': 1398.6952266667042, 'learning_rate': 0.01}, score: 7.216536998748779
+Accepted worse solution: {'input_dim': 123.02817471465092, 'hidden_dim': 204.1861503198743, 'output_dim': 2.6596038580872112, 'vocab_size': 1398.6275586042557, 'learning_rate': 0.0001}, score: 7.235408306121826
+Accepted worse solution: {'input_dim': 123.0551075472496, 'hidden_dim': 204.27607137709856, 'output_dim': 2.6952410281635815, 'vocab_size': 1398.6959962580356, 'learning_rate': 0.01}, score: 7.254902362823486
+Accepted worse solution: {'input_dim': 123.07675185045224, 'hidden_dim': 204.07784225493668, 'output_dim': 2.7499883652664714, 'vocab_size': 1398.8708802077922, 'learning_rate': 0.01}, score: 7.267576217651367
+Accepted worse solution: {'input_dim': 123.13797058900815, 'hidden_dim': 204.00339467078447, 'output_dim': 2.7458591186441472, 'vocab_size': 1399.000906166807, 'learning_rate': 0.01}, score: 7.2572712898254395
+Accepted worse solution: {'input_dim': 123.21652223309499, 'hidden_dim': 204.00327754002063, 'output_dim': 2.7302272357977917, 'vocab_size': 1398.9417293105275, 'learning_rate': 0.0001}, score: 7.238427639007568
+Accepted worse solution: {'input_dim': 123.32021187981587, 'hidden_dim': 203.98541960250586, 'output_dim': 2.7675382622517635, 'vocab_size': 1398.7350809846075, 'learning_rate': 0.0001}, score: 7.229170322418213
+Accepted worse solution: {'input_dim': 123.42330332240087, 'hidden_dim': 204.05734125506132, 'output_dim': 2.758296062145381, 'vocab_size': 1398.6682736668738, 'learning_rate': 0.0001}, score: 7.2464752197265625
+Accepted worse solution: {'input_dim': 123.2394728942774, 'hidden_dim': 204.10509666036813, 'output_dim': 2.7293849275447415, 'vocab_size': 1398.8274787936361, 'learning_rate': 0.01}, score: 7.278913974761963
+Accepted worse solution: {'input_dim': 123.39833893021566, 'hidden_dim': 203.97914936374872, 'output_dim': 2.6933368043042707, 'vocab_size': 1398.7072499308738, 'learning_rate': 0.0001}, score: 7.204701900482178
+Model saved to chatbot_model.pth
+Response tokens: [1312, 86, 86]
+Response: 
+Bot: 
