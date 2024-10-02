@@ -48,6 +48,7 @@ Simulated quantum annealing aims to find an optimized solution by probabilistica
      \[
      P_{	ext{accept}} = \exp\left( -rac{E(\mathbf{x}_{	ext{new}}) - E(\mathbf{x}_{	ext{current}})}{T} 
      \]
+     
      where \( T \) is the current temperature. This probability allows the algorithm to escape local minima, as it permits worse solutions to be accepted, especially at higher temperatures.
 
 5. **Temperature Update**:
@@ -55,6 +56,7 @@ Simulated quantum annealing aims to find an optimized solution by probabilistica
      \[
      T = rac{T_0}{1 + k \cdot t}
      \]
+
      where \( t \) is the iteration number and \( k \) is a cooling rate constant. This ensures that the acceptance probability of worse solutions decreases over time, focusing the search on exploitation rather than exploration.
 
 6. **Step Size Adaptation**:
