@@ -34,6 +34,7 @@ Simulated quantum annealing aims to find an optimized solution by probabilistica
      \[
      \mathbf{x}_{	ext{new}} = \mathbf{x}_{	ext{current}} + \Delta \mathbf{x}
      \]
+     
      where \( \Delta \mathbf{x} \) is drawn from a normal distribution scaled by a step size parameter.
 
 3. **Energy Evaluation**:
