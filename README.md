@@ -14,8 +14,16 @@ This repository contains Python scripts for benchmarking and training a simple c
 ### Introduction
 Quantum annealing is an optimization technique inspired by quantum mechanics. It involves finding the global minimum of a cost function by using a process similar to simulated annealing but utilizing quantum tunneling. In this project, we employ a simulated quantum annealing process to optimize the hyperparameters of the chatbot model, aiming to minimize the loss during training.
 
-### Why Quantum Annealing is Better for CPUs than GPUs
+### Better Suited for CPUs
 Simulated quantum annealing inherently involves evaluating multiple candidate solutions simultaneously, which makes it suitable for a multiprocessing approach. CPUs, with their numerous cores and the ability to manage multiple threads or processes efficiently, are well-suited for this type of workload.
+
+Quantum annealing algorithms, like those used in D-Wave's systems, are better suited for CPUs due to several key factors:
+#### 1. Complex Control Flow and Branching
+Quantum annealing algorithms often involve complex decision-making processes and frequent branching. CPUs are designed to handle such tasks efficiently because they have sophisticated control units that can manage conditional operations and branch predictions effectively.
+#### 2. Precision and Serial Execution
+Quantum annealing requires high precision and often involves serial operations, where each step depends on the results of the previous step. CPUs are optimized for tasks that require high precision and sequential processing.
+#### 3. Memory Hierarchy and Latency
+CPUs have a more sophisticated memory hierarchy with large caches and lower-latency access to main memory. This is advantageous for quantum annealing, which often involves frequent updates and accesses to memory.
 
 In contrast, GPUs are designed for highly parallel computations, typically involving vectorized operations on large datasets (e.g., matrix multiplications for neural networks). However, the process of quantum annealing involves iterative optimization with a mix of random perturbations and conditional evaluations, which do not map well to the SIMD (Single Instruction, Multiple Data) architecture of GPUs. Additionally, CUDA, the programming model for GPUs, does not efficiently support running many independent tasks, making the CPU a better fit for the quantum annealing approach.
 
