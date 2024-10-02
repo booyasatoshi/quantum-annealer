@@ -46,7 +46,7 @@ Simulated quantum annealing aims to find an optimized solution by probabilistica
    - If the new candidate has a lower energy (\( E(\mathbf{x}_{	ext{new}}) < E(\mathbf{x}_{	ext{current}}) \)), accept it as the new current solution.
    - If the new candidate has a higher energy, accept it with a probability given by the Metropolis criterion:
      \[
-     P_{	ext{accept}} = \exp\left( -rac{E(\mathbf{x}_{	ext{new}}) - E(\mathbf{x}_{	ext{current}})}{T} 
+     P_{\text{accept}} = \exp\left( -\frac{E(\mathbf{x}_{\text{new}}) - E(\mathbf{x}_{\text{current}})}{T} \right) 
      \]
      
      where \( T \) is the current temperature. This probability allows the algorithm to escape local minima, as it permits worse solutions to be accepted, especially at higher temperatures.
