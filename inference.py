@@ -1,4 +1,4 @@
-# inference.py
+# inference.py - Virgil Vaduva
 # Version 1.10 - Added CUDA support
 
 import torch

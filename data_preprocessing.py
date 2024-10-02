@@ -1,4 +1,4 @@
-# data_preprocessing.py
+# data_preprocessing.py - Virgil Vaduva
 # Version 1.5 - Generate basic vocabulary from training data 
 
 import itertools

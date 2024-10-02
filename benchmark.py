@@ -1,4 +1,4 @@
-# benchmark.py
+# benchmark.py - Virgil Vaduva
 # Simulated quantum annealing staging; benchmarking tool
 # Version 1.2 - Updated to properly pass device to train_model
 

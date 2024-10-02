@@ -1,4 +1,4 @@
-# model.py
+# model.py - Virgil Vaduva
 # Simulated quantum annealing staging
 # Version 1.4 - Enhanced for potential multi-GPU support
 

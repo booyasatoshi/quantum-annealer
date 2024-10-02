@@ -1,4 +1,4 @@
-# train.py
+# train.py - Virgil Vaduva
 # Simulated quantum annealing staging
 # Version 3.6 - Replaced multithreading with multiprocessing and implemented robust process cancellation
 

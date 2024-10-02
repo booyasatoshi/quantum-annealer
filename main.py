@@ -1,4 +1,4 @@
-# main.py
+# main.py - Virgil Vaduva
 # Version 1.7 - Load training parameters from training_params.json
 
 import json
