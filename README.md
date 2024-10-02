@@ -1,4 +1,3 @@
-
 # Quantum Annealing Benchmarking and Training for Chatbot Model
 
 ## Overview
@@ -47,14 +46,15 @@ Simulated quantum annealing aims to find an optimized solution by probabilistica
    - If the new candidate has a lower energy (\( E(\mathbf{x}_{	ext{new}}) < E(\mathbf{x}_{	ext{current}}) \)), accept it as the new current solution.
    - If the new candidate has a higher energy, accept it with a probability given by the Metropolis criterion:
      \[
-     P_{	ext{accept}} = \exp\left( -rac{E(\mathbf{x}_{	ext{new}}) - E(\mathbf{x}_{	ext{current}})}{T} ight)
+     P_{	ext{accept}} = \exp\left( -rac{E(\mathbf{x}_{	ext{new}}) - E(\mathbf{x}_{	ext{current}})}{T} 
+ight)
      \]
      where \( T \) is the current temperature. This probability allows the algorithm to escape local minima, as it permits worse solutions to be accepted, especially at higher temperatures.
 
 5. **Temperature Update**:
    - The temperature is gradually decreased according to a cooling schedule:
      \[
-     T = rac{T_0}{1 + k \cdot t}
+     T = rac{T_0}{1 + k \cdot t}
      \]
      where \( t \) is the iteration number and \( k \) is a cooling rate constant. This ensures that the acceptance probability of worse solutions decreases over time, focusing the search on exploitation rather than exploration.
 
