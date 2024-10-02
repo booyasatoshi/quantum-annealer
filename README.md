@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains Python scripts for benchmarking and training a simple chatbot model using a simulated quantum annealing approach. The goal of this project is to use quantum-inspired optimization to effectively tune the hyperparameters of the chatbot model and evaluate its performance across different computing devices (CPU and GPU).
+This repository contains experimental Python scripts for benchmarking and training a simple chatbot model using a simulated quantum annealing approach. The goal of this project is to use quantum-inspired optimization to effectively tune the hyperparameters of the chatbot model and evaluate its performance across different computing devices (CPU and GPU). Ths goal is to research the effectiveness of optimization paths to coherence and determine if and how CPU inference can be optimized to produce acceptable results on non-GPU devices.
 
 ### Files in This Repository
 - `benchmark.py`: Main entry point for benchmarking the training of the chatbot model. It stages and benchmarks the quantum annealing process to measure the training effectiveness on different devices.
