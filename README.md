@@ -31,8 +31,35 @@ In contrast, GPUs are designed for highly parallel computations, typically invol
 
 Simulated quantum annealing aims to find an optimized solution by probabilistically selecting configurations that minimize an objective function, which is typically the loss function of the model. The process is inspired by the concept of "quantum tunneling," which allows for escaping local minima more effectively than classical annealing.
 
+The local steps to reach coherence are:
+
+#### Initialization:
+Start with an initial configuration for the model parameters.
+Define an energy function that quantifies the model's performance, with lower values indicating better performance.
+
+#### Perturbation:
+Slightly modify the current configuration to create a new candidate configuration.
+The modification should be small to ensure a smooth search space exploration.
+
+#### Evaluation:
+Compute the energy of the new candidate configuration.
+Compare the new energy with the energy of the current configuration.
+
+#### Acceptance Criteria:
+If the new configuration has lower energy, accept it as the new current configuration.
+If the new configuration has higher energy, accept it with a probability that decreases over time, allowing occasional uphill moves to escape local minima.
+
+#### Annealing Schedule:
+Gradually reduce the probability of accepting worse configurations by decreasing a control parameter (temperature or energy) over iterations.
+This process mimics cooling in physical annealing, where the system settles into a low-energy state.
+
+#### Termination:
+Continue the process until a stopping criterion is met (coherence), such as a maximum number of iterations or a satisfactory energy level
+
+
 #### Algorithm Steps
 1. **Initialization**:
+
    - Define the bounds for each hyperparameter.
    - Initialize the current solution \( \mathbf{x}_{	ext{current}} \) randomly within the bounds.
    - Set an initial temperature \( T_0 \), which controls the probability of accepting worse solutions.
