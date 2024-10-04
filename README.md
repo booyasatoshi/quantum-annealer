@@ -61,31 +61,39 @@ Continue the process until a stopping criterion is met (coherence), such as a ma
 1. **Initialization**:
 
    - Define the bounds for each hyperparameter.
-   - Initialize the current solution x_current randomly within the bounds.
-   - Set an initial temperature T₀, which controls the probability of accepting worse solutions.
+   - Initialize the current solution $\mathbf{x}_{\text{current}}$ randomly within the bounds.
+   - Set an initial temperature $T_0$, which controls the probability of accepting worse solutions.
 
 2. **Candidate Generation**:
-   - For each iteration, generate a new candidate solution x_new by perturbing x_current with a random noise term:
-     x_new = x_current + Δx
+   - For each iteration, generate a new candidate solution $\mathbf{x}_{\text{new}}$ by perturbing $\mathbf{x}_{\text{current}}$ with a random noise term:
+   $$
+   \mathbf{x}_{\text{new}} = \mathbf{x}_{\text{current}} + \Delta \mathbf{x}
+   $$
      
-     where Δx is drawn from a normal distribution scaled by a step size parameter.
+   where $\Delta \mathbf{x}$ is drawn from a normal distribution scaled by a step size parameter.
 
 3. **Energy Evaluation**:
-   - Calculate the energy (or objective function value) for both x_current and x_new. The energy is the value of the loss function for the chatbot model:
-     E(x) = Loss(x)
+   - Calculate the energy (or objective function value) for both $\mathbf{x}_{\text{current}}$ and $\mathbf{x}_{\text{new}}$. The energy is the value of the loss function for the chatbot model:
+   $$
+   E(\mathbf{x}) = \text{Loss}(\mathbf{x})
+   $$
 
 4. **Acceptance Criterion**:
-   - If the new candidate has a lower energy (E(x_new) < E(x_current)), accept it as the new current solution.
+   - If the new candidate has a lower energy ($E(\mathbf{x}_{\text{new}}) < E(\mathbf{x}_{\text{current}})$), accept it as the new current solution.
    - If the new candidate has a higher energy, accept it with a probability given by the Metropolis criterion:
-     P_accept = e^(- (E(x_new) - E(x_current)) / T)
+   $$
+   P_{\text{accept}} = \exp\left( -\frac{E(\mathbf{x}_{\text{new}}) - E(\mathbf{x}_{\text{current}})}{T} \right)
+   $$
      
-     where T is the current temperature. This probability allows the algorithm to escape local minima, as it permits worse solutions to be accepted, especially at higher temperatures.
+   where $T$ is the current temperature. This probability allows the algorithm to escape local minima, as it permits worse solutions to be accepted, especially at higher temperatures.
 
 5. **Temperature Update**:
    - The temperature is gradually decreased according to a cooling schedule:
-     T = T₀ / (1 + k · t)
+   $$
+   T = \frac{T_0}{1 + k \cdot t}
+   $$
 
-     where t is the iteration number and k is a cooling rate constant. This ensures that the acceptance probability of worse solutions decreases over time, focusing the search on exploitation rather than exploration.
+   where $t$ is the iteration number and $k$ is a cooling rate constant. This ensures that the acceptance probability of worse solutions decreases over time, focusing the search on exploitation rather than exploration.
 
 6. **Step Size Adaptation**:
    - The step size for generating new candidates is adapted during the optimization process to balance between exploring new regions of the solution space (large step size) and fine-tuning around promising solutions (small step size).
@@ -93,6 +101,7 @@ Continue the process until a stopping criterion is met (coherence), such as a ma
 7. **Convergence and Early Termination**:
    - The algorithm monitors the energy values over a sliding window to determine whether the solution has converged.
    - If the relative improvement in energy over a certain number of iterations falls below a threshold, the optimization is terminated early.
+
 
 
 ### Usage in Training
